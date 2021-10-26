@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name=viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>Ryan Stewart</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+        ScrollReveal({ delay: 500 });
+    </script>
+    <script src="https://kit.fontawesome.com/d1ed772a88.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+
+    <div id="page1" class="page">
+        <h1 id="logo">RS</h1>
+        <i id="down-arrow" class="fas fa-chevron-down"></i>
+    </div>
+
+    <div class="parallax-image" style="background-image: url('ryanstewart.jpg')"></div>
+
+    <div id="page2" class="page">
+        <p id="p-1">heyo!</p>
+        <p id="p-2">welcome to my website!</p>
+        <p id="p-3">here's some of my dj stuff:</p>
+    </div>
+
+    <iframe id="mixcloud" width="100%" height="50%" src="https://www.mixcloud.com/widget/iframe/?feed=%2FRyanWhiteDTX%2F" frameborder="0"></iframe>
+
+    <div id="page3" class="page">
+        <h2 id="want-to-contact">want to contact me?</h2>
+        <h3 id="want-to-contact-scroll-down">(scroll down)</h3>
+    </div>
+
+</body>
+<script src="paraxify.min.js"></script>
+<script>
+    // AOS.init();
+    ScrollReveal().reveal("#logo");
+    ScrollReveal().reveal("#down-arrow", { delay: 1000 });
+    ScrollReveal().reveal("#p-1", { delay: 1000 });
+    ScrollReveal().reveal("#p-2", { delay: 1500 });
+    ScrollReveal().reveal("#p-3", { delay: 2000 });
+    ScrollReveal().reveal("#mixcloud", {delay: 2500});
+    ScrollReveal().reveal("#want-to-contact");
+    ScrollReveal().reveal("#want-to-contact-scroll-down", { delay: 1000 });
+
+    myParaxify = paraxify(".parallax-image");
+</script>
+</html>
